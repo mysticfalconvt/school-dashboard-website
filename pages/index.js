@@ -1,15 +1,14 @@
 import styled from 'styled-components'
+import { MainTitle } from '../components/utilityStyles/MainTitle'
 
-const Title = styled.h1`
-  font-size: 50px;
-  color: ${({ theme }) => theme.colors.primary};
-`
+
 
 export default function Home() {
-  return (<>
-  <Title>Do you want to improve communication at your school?</Title>
-  <p>what about</p>
-  </>
+  return (
+    <>
+      <MainTitle>Do you want to improve communication at your school?</MainTitle>
+      <p>what about</p>
+    </>
   )
 
 }
