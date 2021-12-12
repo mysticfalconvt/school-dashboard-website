@@ -1,27 +1,21 @@
 import { ThemeProvider } from 'styled-components'
 import { GlobalStyle } from '../styles/global'
+import useThemes from '../util/useThemes'
+import { useEffect } from 'react'
 
-
-const light = {
-  colors: {
-    primary: '#0070f3',
-    secondary: '#ff4081',
-  },
-}
-
-const dark = {
-  colors: {
-    primary: '#0070f3',
-    secondary: '#ff4081',
-  },
-}
 
 export default function App({ Component, pageProps }) {
+  const { theme, themesList, setThemeByName, ThemeButtons } = useThemes()
+
+
+
+
   return (
     <>
-      <ThemeProvider theme={light}>
+      <ThemeProvider theme={theme}>
         <GlobalStyle />
         <Component {...pageProps} />
+        <ThemeButtons />
       </ThemeProvider>
     </>
   )
