@@ -20,12 +20,13 @@ const light = {
         secondaryActive: 'rgba(0, 0, 0, 0.05)',
         primaryDisabled: 'rgba(0, 0, 0, 0.1)',
         secondaryDisabled: 'rgba(0, 0, 0, 0.05)',
+        borderSize: '1px 1px'
     },
 }
 
 const dark = {
     colors: {
-        primaryText: 'rgba(255, 255, 255, 1)',
+        primaryText: 'rgba(255, 255, 255, .9)',
         secondaryText: 'rgba(255, 255, 255, 0.7)',
         primaryBackground: 'rgba(0, 0, 0, 1)',
         secondaryBackground: 'rgba(0, 0, 0, 0.7)',
@@ -41,6 +42,7 @@ const dark = {
         secondaryActive: 'rgba(255, 255, 255, 0.05)',
         primaryDisabled: 'rgba(255, 255, 255, 0.1)',
         secondaryDisabled: 'rgba(255, 255, 255, 0.05)',
+        borderSize: '1px 1px'
     },
 }
 const neon = {
@@ -49,11 +51,11 @@ const neon = {
         secondaryText: 'rgba(0, 0, 255, 0.7)',
         primaryBackground: 'rgba(10, 10, 10, 1)',
         secondaryBackground: 'rgba(10, 10, 10, 0.7)',
-        primaryBorder: 'rgba(255, 255, 255, 0.1)',
+        primaryBorder: 'rgba(255, 255, 255, 0.5)',
         secondaryBorder: 'rgba(255, 255, 255, 0.05)',
         primaryHighlight: 'rgba(255, 255, 255, 0.1)',
         secondaryHighlight: 'rgba(255, 255, 255, 0.05)',
-        primaryShadow: 'rgba(255, 255, 255, 0.1)',
+        primaryShadow: 'rgba(0, 255, 255, 0.9)',
         secondaryShadow: 'rgba(255, 255, 255, 0.05)',
         primaryHover: 'rgba(255, 255, 255, 0.1)',
         secondaryHover: 'rgba(255, 255, 255, 0.05)',
@@ -61,35 +63,17 @@ const neon = {
         secondaryActive: 'rgba(255, 255, 255, 0.05)',
         primaryDisabled: 'rgba(255, 255, 255, 0.1)',
         secondaryDisabled: 'rgba(255, 255, 255, 0.05)',
+        borderSize: '0px 0px 10px'
     },
 }
 
-const aqua = {
-    colors: {
-        primaryText: 'rgba(0, 255, 255, 1)',
-        secondaryText: 'rgba(0, 0, 255, 0.7)',
-        primaryBackground: 'rgba(10, 10, 10, 1)',
-        secondaryBackground: 'rgba(10, 10, 10, 0.7)',
-        primaryBorder: 'rgba(255, 255, 255, 0.1)',
-        secondaryBorder: 'rgba(255, 255, 255, 0.05)',
-        primaryHighlight: 'rgba(255, 255, 255, 0.1)',
-        secondaryHighlight: 'rgba(255, 255, 255, 0.05)',
-        primaryShadow: 'rgba(255, 255, 255, 0.1)',
-        secondaryShadow: 'rgba(255, 255, 255, 0.05)',
-        primaryHover: 'rgba(255, 255, 255, 0.1)',
-        secondaryHover: 'rgba(255, 255, 255, 0.05)',
-        primaryActive: 'rgba(255, 255, 255, 0.1)',
-        secondaryActive: 'rgba(255, 255, 255, 0.05)',
-        primaryDisabled: 'rgba(255, 255, 255, 0.1)',
-        secondaryDisabled: 'rgba(255, 255, 255, 0.05)',
-    },
-}
+
 
 const themes = {
     light,
     dark,
     neon,
-    aqua,
+
 };
 
 const themesList = Object.keys(themes);

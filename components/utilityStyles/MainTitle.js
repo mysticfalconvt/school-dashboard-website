@@ -9,6 +9,7 @@ export const MainTitle = styled.h1`
   text-align: center;
   border-radius: 5px;
   border: 1px solid ${({ theme }) => theme.colors.primaryBorder};
+  text-shadow: ${({ theme }) => theme.colors.borderSize} ${({ theme }) => theme.colors.primaryShadow};
   
 
 `
